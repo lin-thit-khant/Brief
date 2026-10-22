@@ -6,11 +6,27 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		F97D6359308A3ABE00CDA690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9A24B003088A27C00E8EE95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9A24B073088A27C00E8EE95;
+			remoteInfo = Brief;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F97D6355308A3ABE00CDA690 /* BriefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BriefTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A24B083088A27C00E8EE95 /* Brief.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brief.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		F97D6356308A3ABE00CDA690 /* BriefTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BriefTests;
+			sourceTree = "<group>";
+		};
 		F9A24B0A3088A27C00E8EE95 /* Brief */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Brief;
@@ -19,6 +35,11 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F97D6352308A3ABE00CDA690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 		F9A24B053088A27C00E8EE95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
@@ -31,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				F9A24B0A3088A27C00E8EE95 /* Brief */,
+				F97D6356308A3ABE00CDA690 /* BriefTests */,
 				F9A24B093088A27C00E8EE95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				F9A24B083088A27C00E8EE95 /* Brief.app */,
+				F97D6355308A3ABE00CDA690 /* BriefTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,6 +69,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F97D6354308A3ABE00CDA690 /* BriefTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F97D635B308A3ABE00CDA690 /* Build configuration list for PBXNativeTarget "BriefTests" */;
+			buildPhases = (
+				F97D6351308A3ABE00CDA690 /* Sources */,
+				F97D6352308A3ABE00CDA690 /* Frameworks */,
+				F97D6353308A3ABE00CDA690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F97D635A308A3ABE00CDA690 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F97D6356308A3ABE00CDA690 /* BriefTests */,
+			);
+			name = BriefTests;
+			productName = BriefTests;
+			productReference = F97D6355308A3ABE00CDA690 /* BriefTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F9A24B073088A27C00E8EE95 /* Brief */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9A24B133088A27D00E8EE95 /* Build configuration list for PBXNativeTarget "Brief" */;
@@ -74,6 +118,10 @@
 				LastSwiftUpdateCheck = 2700;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
+					F97D6354308A3ABE00CDA690 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = F9A24B073088A27C00E8EE95;
+					};
 					F9A24B073088A27C00E8EE95 = {
 						CreatedOnToolsVersion = 27.0;
 					};
@@ -94,11 +142,17 @@
 			projectRoot = "";
 			targets = (
 				F9A24B073088A27C00E8EE95 /* Brief */,
+				F97D6354308A3ABE00CDA690 /* BriefTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F97D6353308A3ABE00CDA690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
 		F9A24B063088A27C00E8EE95 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
@@ -107,6 +161,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F97D6351308A3ABE00CDA690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 		F9A24B043088A27C00E8EE95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
@@ -114,7 +173,57 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F97D635A308A3ABE00CDA690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9A24B073088A27C00E8EE95 /* Brief */;
+			targetProxy = F97D6359308A3ABE00CDA690 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F97D635C308A3ABE00CDA690 /* Debug configuration for PBXNativeTarget "BriefTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92FTD89LAM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.khant.linthit.BriefTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brief.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brief";
+			};
+			name = Debug;
+		};
+		F97D635D308A3ABE00CDA690 /* Release configuration for PBXNativeTarget "BriefTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92FTD89LAM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.khant.linthit.BriefTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brief.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brief";
+			};
+			name = Release;
+		};
 		F9A24B113088A27D00E8EE95 /* Debug configuration for PBXProject "Brief" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -303,6 +412,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F97D635B308A3ABE00CDA690 /* Build configuration list for PBXNativeTarget "BriefTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F97D635C308A3ABE00CDA690 /* Debug configuration for PBXNativeTarget "BriefTests" */,
+				F97D635D308A3ABE00CDA690 /* Release configuration for PBXNativeTarget "BriefTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
 		F9A24B033088A27C00E8EE95 /* Build configuration list for PBXProject "Brief" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

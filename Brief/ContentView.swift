@@ -7,18 +7,14 @@
 
 import SwiftUI
 
-enum WeatherScreen {
-    case loading
-    case loaded(temperature: Double, condition: String, stories: [Story], fetchedAt: Date)
-    case failed(String)
-}
+
 
 struct ContentView: View {
-    @State private var screen = WeatherScreen.loading
+    @State private var model = BriefingModel()
     
     var body: some View {
         List {
-            switch screen {
+            switch model.screen {
             case .loading:
                 ProgressView()
             case .loaded(let temperature, let condition, let stories, let fetchedAt):
@@ -33,39 +29,13 @@ struct ContentView: View {
             }
         }
         .task {
-            await loadBriefing()
+            await model.load()
         }
         .refreshable {
-            await loadBriefing()
+            await model.load()
         }
     }
-    
-    private func loadBriefing() async {
-        do {
-            let weather = try await fetchCurrentWeather()
-            let stories = try await fetchStories()
-            let briefing = Briefing(weather: weather, stories: stories, featchedAt: .now)
-            let file = try BriefingCache().save(briefing)
-            print(file.path)
-            screen = .loaded(
-                temperature: weather.current.temperature,
-                condition: weather.current.condition,
-                stories: stories,
-                fetchedAt: briefing.featchedAt
-            )
-        } catch {
-            if let briefing = try? BriefingCache().load() {
-                screen = .loaded(
-                    temperature: briefing.weather.current.temperature,
-                    condition: briefing.weather.current.condition,
-                    stories: briefing.stories,
-                    fetchedAt: briefing.featchedAt
-                )
-            } else {
-                screen = .failed(error.localizedDescription)
-            }
-        }
-    }
+
 }
 
 #Preview {
