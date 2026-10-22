@@ -6,10 +6,10 @@
 //
 import Foundation
 
-struct CurrentWeather: Decodable {
+struct CurrentWeather: Codable {
     let current: Reading
     
-    struct Reading: Decodable {
+    struct Reading: Codable {
         let temperature: Double
         let weatherCode: Int
         var condition: String {
